@@ -7,31 +7,6 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 
 
-# Define the dictionary of usernames and passwords
-USER_CREDS = {
-    "TamaraB": "Tamara190316",
-    "ZwPhiriJa": "Malaya1996",
-    "ZwMunengamiTa": "BossTwani",
-    "ZwMapfazFa": "FariMapfaza",
-    "ZwNdunaGi": "Induna2023"
-}
-
-def login():
-    """
-    Displays the login page and prompts the user to enter their
-    username and password. If the login is successful, the function
-    returns True, otherwise it returns False.
-    """
-    st.title("Welcome to Nestle Online Manufacturing System")
-
-    username = st.text_input("Username")
-    password = st.text_input("Password", type="password")
-
-    if st.button("Login"):
-        if username in USER_CREDS and USER_CREDS[username] == password:
-            st.success("Logged in!")
-            
-
 
 st.set_page_config(
 page_title="Multipage App",
